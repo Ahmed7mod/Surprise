@@ -9,12 +9,14 @@ body {
     overflow: hidden;
     flex-direction: column;
     text-align: center;
-    box-sizing: border-box;
 }
 
 .container {
     position: relative;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #hearts {
@@ -35,11 +37,17 @@ button {
     cursor: pointer;
     border-radius: 25px;
     transition: background-color 0.3s;
-    margin: 20px;
+    margin-top: 20px;  /* Space between text and button */
 }
 
 button:hover {
     background-color: #ff3385;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ff4d94;
+    margin-bottom: 20px;  /* Space between text and button */
 }
 
 .heart {
